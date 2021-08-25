@@ -103,6 +103,23 @@ export default function AppNavigation({ navigation }) {
           ),
         })}
       />
+
+
+<Stack.Screen
+        name='Image'
+        component={ImageScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image
+              source={require('../../assets/images/back.png')}
+            />
+          ),
+        })}
+      />
+ 
+ {/* ToDo: make stacks for navigation, right now it console.log when pressed */}
+
     </Stack.Navigator>
   );
 }
