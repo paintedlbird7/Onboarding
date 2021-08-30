@@ -45,9 +45,7 @@ export default function AppNavigation({ navigation }) {
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
@@ -58,9 +56,7 @@ export default function AppNavigation({ navigation }) {
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
@@ -71,9 +67,7 @@ export default function AppNavigation({ navigation }) {
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
@@ -84,9 +78,7 @@ export default function AppNavigation({ navigation }) {
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
@@ -97,29 +89,98 @@ export default function AppNavigation({ navigation }) {
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
 
-
-<Stack.Screen
+      <Stack.Screen
         name='Image'
         component={ImageScreen}
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
-            <Image
-              source={require('../../assets/images/back.png')}
-            />
+            <Image source={require('../../assets/images/back.png')} />
           ),
         })}
       />
- 
- {/* ToDo: make stacks for navigation, right now it console.log when pressed */}
 
+      <Stack.Screen
+        name='Sign in'
+        component={SigninScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Portfolio'
+        component={PortfolioScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Community'
+        component={CommunityScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Message'
+        component={MessageScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Referral'
+        component={ReferralScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Settings'
+        component={SettingsScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+      <Stack.Screen
+        name='Discovery'
+        component={DiscoveryScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
     </Stack.Navigator>
   );
 }
