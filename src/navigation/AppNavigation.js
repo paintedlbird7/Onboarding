@@ -28,8 +28,40 @@ import { Ionicons } from '@expo/vector-icons';
 import ProfilePicScreen from '../screens/Onboarding/ProfilePicScreen';
 import ViewProfilePicScreen from '../screens/Onboarding/ViewProfilePicScreen';
 import FreeFiveScreen from '../screens/Onboarding/FreeFiveScreen';
+// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
+
+/**
+ * *********************************************************
+ * Create Stack, BottomTab, and TopTab Navigators
+ * *********************************************************
+ * **/
 const Stack = createStackNavigator();
+// const SessionTab = createMaterialTopTabNavigator();
+
+
+
+/**
+ * *********************************************************
+ * Individual stack navigators to inject into main App flow
+ * *********************************************************
+ * **/
+const SessionTabNavigator = () => {
+  return (
+    <SessionTab.Navigator
+      tabBarOptions={{
+        activeTintColor: 'white',
+        style: { backgroundColor: '#1B1F2B' },
+        indicatorStyle: { backgroundColor: '#756EFA' },
+      }}>
+      <SessionTab.Screen name='fri' component={DayOneScreen} />
+      <SessionTab.Screen name='sat' component={DayTwoScreen} />
+      <SessionTab.Screen name='sun' component={DayThreeScreen} />
+      <SessionTab.Screen name='agenda' component={MySessionsScreen} />
+    </SessionTab.Navigator>
+  );
+};
+
 
 export default function AppNavigation({ navigation }) {
   return (
@@ -181,6 +213,7 @@ export default function AppNavigation({ navigation }) {
           ),
         })}
       />
+      
     </Stack.Navigator>
   );
 }
