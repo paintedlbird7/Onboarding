@@ -41,27 +41,6 @@ const Stack = createStackNavigator();
 
 
 
-/**
- * *********************************************************
- * Individual stack navigators to inject into main App flow
- * *********************************************************
- * **/
-const SessionTabNavigator = () => {
-  return (
-    <SessionTab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'white',
-        style: { backgroundColor: '#1B1F2B' },
-        indicatorStyle: { backgroundColor: '#756EFA' },
-      }}>
-      <SessionTab.Screen name='fri' component={DayOneScreen} />
-      <SessionTab.Screen name='sat' component={DayTwoScreen} />
-      <SessionTab.Screen name='sun' component={DayThreeScreen} />
-      <SessionTab.Screen name='agenda' component={MySessionsScreen} />
-    </SessionTab.Navigator>
-  );
-};
-
 
 export default function AppNavigation({ navigation }) {
   return (
