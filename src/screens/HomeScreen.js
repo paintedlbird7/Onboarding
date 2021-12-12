@@ -18,7 +18,7 @@ import * as font from 'expo-font';
 import { useFonts } from 'expo-font';
 
 
-
+// testing out 2 different fonts
 export default function HomeScreen({ navigation }) {
   const [loaded] = useFonts({
         'FontsFree-Net-SFProDisplay-Regular': require('../../assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf'),
