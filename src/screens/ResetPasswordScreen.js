@@ -12,7 +12,9 @@ import {
 // import {IconButton} from '../components/ui/IconButton';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const ResetPasswordScreen = props => {
+export default function ResetPasswordScreen({ navigation }) {
+//  HomeScreen({ navigation }) {
+
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [modalOpen, setModalOpen] = React.useState('false');
@@ -59,14 +61,18 @@ const ResetPasswordScreen = props => {
       <View style={{ marginBottom: 20 }}>
         {/* To do, place it ontop the Reset Button */}
             {/* TODO: place it ontop the Reset Button */}
-      <MaterialCommunityIcons
+   
+        <TouchableOpacity>
+             <MaterialCommunityIcons
         name='keyboard-return'
         size={24}
         style={styles.modalToggle}
         onPress={() => setModalOpen(true)}
       />
-        <TouchableOpacity>
-          <Button title='Reset' onPress={() => Reset({ email, password })} />
+      
+          <Button title='Reset' onPress={() => navigation.navigate('ResetPassword',  console.log("ResetPassword Button Pressed"))} />
+
+          {/* onPress={() => Reset({ email, password })} */}
         </TouchableOpacity>
       </View>
 
@@ -145,5 +151,3 @@ const styles = StyleSheet.create({
     marginBottom: 0,
   },
 });
-
-export default ResetPasswordScreen;
