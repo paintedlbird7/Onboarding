@@ -28,8 +28,20 @@ import { Ionicons } from '@expo/vector-icons';
 import ProfilePicScreen from '../screens/Onboarding/ProfilePicScreen';
 import ViewProfilePicScreen from '../screens/Onboarding/ViewProfilePicScreen';
 import FreeFiveScreen from '../screens/Onboarding/FreeFiveScreen';
+import ResetPasswordScreen from '../screens/ResetPasswordScreen';
+// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
+
+/**
+ * *********************************************************
+ * Create Stack, BottomTab, and TopTab Navigators
+ * *********************************************************
+ * **/
 const Stack = createStackNavigator();
+// const SessionTab = createMaterialTopTabNavigator();
+
+
+
 
 export default function AppNavigation({ navigation }) {
   return (
@@ -116,6 +128,17 @@ export default function AppNavigation({ navigation }) {
         })}
       />
 
+    <Stack.Screen
+        name='ResetPassword'
+        component={ResetPasswordScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
       <Stack.Screen
         name='Portfolio'
         component={PortfolioScreen}
@@ -181,6 +204,7 @@ export default function AppNavigation({ navigation }) {
           ),
         })}
       />
+      
     </Stack.Navigator>
   );
 }
