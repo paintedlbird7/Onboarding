@@ -28,6 +28,7 @@ import { Ionicons } from '@expo/vector-icons';
 import ProfilePicScreen from '../screens/Onboarding/ProfilePicScreen';
 import ViewProfilePicScreen from '../screens/Onboarding/ViewProfilePicScreen';
 import FreeFiveScreen from '../screens/Onboarding/FreeFiveScreen';
+import ResetPasswordScreen from '../screens/ResetPasswordScreen';
 // import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 
@@ -119,6 +120,17 @@ export default function AppNavigation({ navigation }) {
       <Stack.Screen
         name='Sign in'
         component={SigninScreen}
+        options={({ navigation }) => ({
+          headerBackTitleVisible: false,
+          headerBackImage: ({}) => (
+            <Image source={require('../../assets/images/back.png')} />
+          ),
+        })}
+      />
+
+    <Stack.Screen
+        name='ResetPassword'
+        component={ResetPasswordScreen}
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (

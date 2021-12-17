@@ -40,10 +40,17 @@ export default function HomeScreen({ navigation }) {
           title='Create account'
           onPress={() => navigation.navigate('Register')}
         />
+
         <Button
         //   style={styles.signin}
           title='Sign in'
           onPress={() => navigation.navigate('Sign in',  console.log("Sign in Button Pressed"))}
+        />
+
+      <Button
+        //   style={styles.signin}
+          title='ResetPassword'
+          onPress={() => navigation.navigate('ResetPassword',  console.log("ResetPassword Button Pressed"))}
         />
 
         <Button
