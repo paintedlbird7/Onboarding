@@ -13,7 +13,7 @@ import {
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function ResetPasswordScreen({ navigation }) {
-//  HomeScreen({ navigation }) {
+  //  HomeScreen({ navigation }) {
 
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -31,11 +31,12 @@ export default function ResetPasswordScreen({ navigation }) {
             onPress={() => setModalOpen(false)}
           />
 
-          <Text>Reset Password confirmed, please check your email for link to reset your password</Text>
+          <Text>
+            Reset Password confirmed, please check your email for link to reset
+            your password
+          </Text>
         </View>
       </Modal>
-
-  
 
       <View style={styles.section}>
         <Text style={styles.sectionText}>Forgot Password</Text>
@@ -60,26 +61,32 @@ export default function ResetPasswordScreen({ navigation }) {
 
       <View style={{ marginBottom: 20 }}>
         {/* To do, place it ontop the Reset Button */}
-            {/* TODO: place it ontop the Reset Button */}
-   
-        <TouchableOpacity>
-             <MaterialCommunityIcons
-        name='keyboard-return'
-        size={24}
-        style={styles.modalToggle}
-        onPress={() => setModalOpen(true)}
-      />
-      
-          <Button title='Reset' onPress={() => navigation.navigate('ResetPassword',  console.log("ResetPassword Button Pressed"))} />
+        {/* TODO: place it ontop the Reset Button */}
 
-          {/* onPress={() => Reset({ email, password })} */}
+        <TouchableOpacity>
+          <MaterialCommunityIcons
+            name='keyboard-return'
+            size={24}
+            style={styles.modalToggle}
+            onPress={() => setModalOpen(true)}
+          />
+ {/* ToDo: WIP make button functional hook it to the backend which is not built yet */}
+          <Button
+            title='Reset'
+            onPress={() =>
+              navigation.navigate(
+                'ResetPassword',
+                console.log('ResetPassword Button Pressed')
+              )
+            }
+          />
         </TouchableOpacity>
       </View>
 
       <Text>Need help? Email us at organizer@mail.com</Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
