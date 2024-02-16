@@ -18,10 +18,6 @@ import RegisterUsernameScreen from '../screens/Onboarding/RegisterUsernameScreen
 import PasswordScreen from '../screens/Onboarding/PasswordScreen';
 import HomeScreen from '../screens/HomeScreen';
 import ImageScreen from '../screens/ImageScreen';
-import PortfolioScreen from '../screens/PortfolioScreen';
-import CommunityScreen from '../screens/CommunityScreen';
-import MessageScreen from '../screens/MessageScreen';
-import ReferralScreen from '../screens/ReferralScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 // import DiscoveryScreen from '../screens/DiscoveryScreen';
 import { Ionicons } from '@expo/vector-icons';
@@ -131,50 +127,6 @@ export default function AppNavigation({ navigation }) {
     <Stack.Screen
         name='ResetPassword'
         component={ResetPasswordScreen}
-        options={({ navigation }) => ({
-          headerBackTitleVisible: false,
-          headerBackImage: ({}) => (
-            <Image source={require('../../assets/images/back.png')} />
-          ),
-        })}
-      />
-
-      <Stack.Screen
-        name='Portfolio'
-        component={PortfolioScreen}
-        options={({ navigation }) => ({
-          headerBackTitleVisible: false,
-          headerBackImage: ({}) => (
-            <Image source={require('../../assets/images/back.png')} />
-          ),
-        })}
-      />
-
-      <Stack.Screen
-        name='Community'
-        component={CommunityScreen}
-        options={({ navigation }) => ({
-          headerBackTitleVisible: false,
-          headerBackImage: ({}) => (
-            <Image source={require('../../assets/images/back.png')} />
-          ),
-        })}
-      />
-
-      <Stack.Screen
-        name='Message'
-        component={MessageScreen}
-        options={({ navigation }) => ({
-          headerBackTitleVisible: false,
-          headerBackImage: ({}) => (
-            <Image source={require('../../assets/images/back.png')} />
-          ),
-        })}
-      />
-
-      <Stack.Screen
-        name='Referral'
-        component={ReferralScreen}
         options={({ navigation }) => ({
           headerBackTitleVisible: false,
           headerBackImage: ({}) => (
