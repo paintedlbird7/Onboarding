@@ -58,10 +58,6 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('Image',  console.log("Image Button Pressed"))}
         />   
 
-      <Button
-          title='Message'
-          onPress={() => navigation.navigate('Message',  console.log("Message Button Pressed"))}
-        /> 
 
       <Button
           title='Settings'
@@ -81,10 +77,10 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start',
+      // justifyContent: 'space-between',
+      // alignItems: 'flex-start',
       // marginTop: 40,
-      paddingLeft: 30, 
+      // paddingLeft: 30, 
     },
     // font: {
     //   fontFamily: 'FontsFree-Net-SFProDisplay-Regular',
