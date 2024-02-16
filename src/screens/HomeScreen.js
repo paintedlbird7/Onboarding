@@ -83,10 +83,10 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('Settings',  console.log("Settings Button Pressed"))}
         /> 
 
-      <Button
+      {/* <Button
           title='Discovery'
           onPress={() => navigation.navigate('Discovery',  console.log("Discovery Button Pressed"))}
-        /> 
+        />  */}
       </View>
 
       

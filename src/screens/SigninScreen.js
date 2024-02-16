@@ -81,13 +81,13 @@ export default function SigninScreen({ navigation }) {
         <TouchableOpacity
           disabled={disabled}
           style={{ backgroundColor: disabled ? 'silver' : 'grey' }}>
-          <Text
+          {/* <Text
             onPress={() => navigation.navigate('Discovery')}
             style={{ color: 'white', textAlign: 'center' }}
             style={styles.button}
             title='button'>
             Next
-          </Text>
+          </Text> */}
         </TouchableOpacity>
       </View>
     </View>

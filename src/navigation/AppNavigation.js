@@ -23,7 +23,7 @@ import CommunityScreen from '../screens/CommunityScreen';
 import MessageScreen from '../screens/MessageScreen';
 import ReferralScreen from '../screens/ReferralScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import DiscoveryScreen from '../screens/DiscoveryScreen';
+// import DiscoveryScreen from '../screens/DiscoveryScreen';
 import { Ionicons } from '@expo/vector-icons';
 import ProfilePicScreen from '../screens/Onboarding/ProfilePicScreen';
 import ViewProfilePicScreen from '../screens/Onboarding/ViewProfilePicScreen';
@@ -193,8 +193,8 @@ export default function AppNavigation({ navigation }) {
           ),
         })}
       />
-
-      <Stack.Screen
+{/* TODO: change to PW reset screen back button */}
+      {/* <Stack.Screen
         name='Discovery'
         component={DiscoveryScreen}
         options={({ navigation }) => ({
@@ -204,7 +204,7 @@ export default function AppNavigation({ navigation }) {
           ),
         })}
       />
-      
+       */}
     </Stack.Navigator>
   );
 }
