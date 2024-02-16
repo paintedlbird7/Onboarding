@@ -56,26 +56,11 @@ export default function HomeScreen({ navigation }) {
         <Button
           title='Image'
           onPress={() => navigation.navigate('Image',  console.log("Image Button Pressed"))}
-        />    
-
-      <Button
-          title='Portfolio'
-          onPress={() => navigation.navigate('Portfolio',  console.log("Portfolio Button Pressed"))}
-        /> 
-
-      <Button
-          title='Community'
-          onPress={() => navigation.navigate('Community',  console.log("Community Button Pressed"))}
-        /> 
+        />   
 
       <Button
           title='Message'
           onPress={() => navigation.navigate('Message',  console.log("Message Button Pressed"))}
-        /> 
-
-      <Button
-          title='Referral'
-          onPress={() => navigation.navigate('Referral',  console.log("Referral Button Pressed"))}
         /> 
 
       <Button
