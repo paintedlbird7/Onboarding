@@ -107,9 +107,11 @@ const FreeFiveScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Recieve $5 of any stock</Text>
-      <Text style={styles.h2}>
-        When trading goes live on our platform you will recieve free stock from
-        the company you select after you create your broker account.
+      <Text style={styles.p}>When trading goes live on our platform you</Text>
+
+        <Text style={styles.p2}>will recieve free stock from the company</Text>
+
+        <Text style={styles.p2}>you select after you create your broker account.
       </Text>
 
       <View style={styles.spacer} />
@@ -161,11 +163,11 @@ const styles = StyleSheet.create({
     letterSpacing: -0.05,
     left: '5.5%',
     right: '10.7%',
-    top: '10.29%',
+    top: '55.29%',
     bottom: '86.14%',
     fontWeight: 'bold',
   },
-  h2: {
+  p: {
     left: '6%',
     right: '6.38%',
     top: '8.45%',
@@ -174,12 +176,29 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 14,
     letterSpacing: -0.05,
-    marginTop: 20,
-    paddingBottom: 10,
+    // marginTop: 20,
+    // paddingBottom: 10,
     color: '#969DAC',
     fontSize: 12,
-    marginTop: 20,
+    marginTop: 390,
     paddingBottom: 10,
+    fontSize: 15,
+  },
+  p2: {
+    left: '6%',
+    right: '6.38%',
+    top: '8.45%',
+    bottom: '81.83%',
+    fontWeight: 'normal',
+    fontSize: 12,
+    lineHeight: 14,
+    letterSpacing: -0.05,
+    // marginTop: 20,
+    // paddingBottom: 10,
+    color: '#969DAC',
+    fontSize: 12,
+    marginTop: 29,
+    paddingBottom: 1,
     fontSize: 15,
   },
 
