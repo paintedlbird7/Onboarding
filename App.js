@@ -12,7 +12,7 @@ import {
   View,
   Text,
 } from 'react-native';
-import AppNavigation from '../onboarding/src/navigation/AppNavigation';
+import AppNavigation from '../Onboarding/src/navigation/AppNavigation';
 
 function App({ navigation }) {
   return (
